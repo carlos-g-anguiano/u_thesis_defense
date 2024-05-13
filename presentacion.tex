@@ -1,0 +1,86 @@
+\documentclass[xcolor=dvipsnames,slidestop,compress,mathserif, 11pt]{beamer}
+\usecolortheme[named=Blue]{structure}
+\usetheme[height=2mm]{Rochester}
+\setbeamerfont{structure}{shape=\itshape}
+\mode<presentation> {
+\usetheme{Darmstadt} % Tema seleccionado.
+\usecolortheme{default}%{albatross} % Color del tema.
+\setbeamercovered{transparent} % Transparencia.
+}
+%\setbeamercovered{transparent}
+%}%%%% packages y comandos personales %%%%
+\setbeamertemplate{caption}[numbered]
+\usepackage{ragged2e}
+\usepackage{comment}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Tabla}
+%\usepackage{latexsym} % S��mbolos
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage{stmaryrd}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{dsfont,float}
+\usepackage{soul}
+\usepackage{upgreek}
+\usepackage{accents}
+\usepackage{physics}
+%\usepackage[lite]{mtpro2}
+\usepackage{tikz}
+\usepackage{lipsum}
+\newcommand\Fontvi{\fontsize{6}{7.2}\selectfont}
+%\usepackage{turnstile}
+\font\shi=cmssdc10 scaled 700
+\title[Tesis profesional]{Evoluci\'on de una funci\'on de Wigner de un amplificador param\'etrico}
+\author{TESIS PROFESIONAL\\
+Carlos Eduardo González Anguiano}
+\institute{Departamento de Física ESFM-IPN}
+\date{1 de junio de 2024}
+\usepackage{graphicx}
+%\graphicspath{%
+%
+%    {E:/Efi1-ggg/}% inserted by PCTeX
+%    {/}% inserted by PCTeX
+%}
+\usepackage[utf8]{inputenc} % Usar latin1 causa error para acentos
+\begin{document}
+
+
+\maketitle
+
+
+\begin{frame}
+	\frametitle{Índice}
+	\tableofcontents[pausesections]
+\end{frame}
+
+\section{Introducción}
+
+\begin{frame}[c]
+	\frametitle{Motivación}
+	Max Planck y la \textit{catástrofe ultravioleta}
+	Densidad espectral de energía: Energía por unidad de volumen de ondas electromagnéticas de frecuencia $\nu$.
+	\begin{equation}
+		u(T)=\int_{0}^{\infty}\rho(\nu, T)d\nu.
+	\end{equation}
+	La densidad de cuerpo negro predicha por termodinámica clásica difiere de datos experimentales.
+	Planck propone que los estados de energía de los osciladores son discretos
+	\begin{equation}
+		E_n = nh\nu.
+	\end{equation}
+	De la energía media de los osciladores y la cuantización, se obtiene la distribución de Planck
+	\begin{equation}
+		\rho(\nu, T) = \frac{\hbar \nu^3}{\pi^2 c^3} \frac{1}{e^{\hbar\nu/kT}-1}.
+	\end{equation}
+\end{frame}
+
+
+\end{document}
+
+
+
+
+
+
